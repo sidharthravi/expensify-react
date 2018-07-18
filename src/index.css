@@ -1,0 +1,5 @@
+@import '~antd/dist/antd.min.css';
+
+.is-active{
+    font-weight: 600;
+}
