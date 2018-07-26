@@ -8,8 +8,9 @@ import { firebase } from './firebase/firebase';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { login, logout } from './actions/auth';
+import LoadingPage from './components/LoadingPage';
 
-import './index.css';
+import './styles/app.css';
 import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
@@ -26,7 +27,7 @@ var jsx = (
 	</Provider>
 );
 
-ReactDOM.render( <p>Loading...</p>, document.getElementById('root') );
+ReactDOM.render( <LoadingPage />, document.getElementById('root') );
 
 firebase.auth().onAuthStateChanged((user) => {
 	if(user) {

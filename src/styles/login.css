@@ -1,0 +1,23 @@
+.login-layout{
+    align-items: center;
+    background: url('../images/money-bg.jpg') repeat;
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.login-box{
+    background: #ffffff99;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px #00000033;
+    padding: 3.2rem 1.6rem;
+    text-align: center;
+    width: 25rem;
+}
+
+.login-box-title{
+    margin: 0 0 1.6rem 0;
+    line-height: 1;
+    color:#4caf50;
+}
